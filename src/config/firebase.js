@@ -17,7 +17,7 @@ const {
     signOut, 
     sendEmailVerification, 
     sendPasswordResetEmail,
-  
+    updateProfile,
   } = require("firebase/auth") ;
 
 
@@ -37,6 +37,6 @@ module.exports = {
     signOut,
     sendEmailVerification,
     sendPasswordResetEmail,
+    updateProfile,
     admin,
-    
   };
