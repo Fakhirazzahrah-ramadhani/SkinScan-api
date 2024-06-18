@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const firebaseAuthController = require('../controllers/firebase-auth-controller');
+const article = require('../controllers/article');
 
 router.get('/', (req, res) => {
   res.status(200).json({
@@ -29,5 +30,6 @@ router.post('/login', firebaseAuthController.loginUser);
 router.post('/logout', firebaseAuthController.logoutUser);
 router.post('/reset-password', firebaseAuthController.resetPassword);
 router.get('/username', firebaseAuthController.getUsername);
+router.get('/article', article.getArticle);
 
 module.exports = router;
