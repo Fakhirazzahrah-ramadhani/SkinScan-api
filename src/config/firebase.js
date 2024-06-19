@@ -24,7 +24,7 @@ const {
 firebase.initializeApp(firebaseConfig);
 
 const admin = require('firebase-admin');
-const serviceAccount = require('../../skinscan-capstone-firebase-adminsdk-rpps8-fb0b509c40.json');
+const serviceAccount = require('../../skinscancapstone-firebase-adminsdk-76kxp-6c8f5c025a.json')
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
